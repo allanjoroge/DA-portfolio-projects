@@ -156,7 +156,7 @@ Join PortfolioProjects..CovidVacinations vac
 select *, (RollingPeopleVaccinated/Population)*100
 from #PercentPopulationVaccinated
 
--- Creating view
+-- Creating view to store data for later visualization
 
 Create View PercentPopulationVaccinated as
 select dea.continent, dea.location, dea.date, dea.population, vac.new_vaccinations
